@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"指令日志";
+    NSLog(@">>>>>>>>>>");
     self.view.backgroundColor = GrayBackground;
     [self setTableView];
     
