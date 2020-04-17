@@ -1,0 +1,358 @@
+[
+    {
+        "name"      : "开锁",
+        "en_name"   : "Unlock",
+        "cmd"       : "S202",
+        "parameters": []
+    },
+    {
+        "name"      : "锁车",
+        "en_name"   : "Lock",
+        "cmd"       : "S302",
+        "parameters": []
+    },
+    {
+        "name"      : "ACC打开",
+        "en_name"   : "ACC-ON",
+        "cmd"       : "S326",
+        "parameters": []
+    },
+    {
+        "name"      : "ACC关闭",
+        "en_name"   : "ACC-OFF",
+        "cmd"       : "S327",
+        "parameters": []
+    },
+    {
+        "name"      : "打开电池仓",
+        "en_name"   : "OpenBaterryBox",
+        "cmd"       : "S328",
+        "parameters": []
+    },
+    {
+        "name"      : "找车响铃",
+        "en_name"   : "BellRing",
+        "cmd"       : "S203",
+        "parameters": []
+    },
+    {
+        "name"      : "获取锁状态",
+        "en_name"   : "GetDeviceStatus",
+        "cmd"       : "S201",
+        "parameters": []
+    },
+    {
+        "name"      : "重启设备",
+        "en_name"   : "RebootDevice",
+        "cmd"       : "S900",
+        "parameters": []
+    },
+    {
+        "name"      : "实时语音播报",
+        "en_name"   : "PlayVoice",
+        "cmd"       : "S207",
+        "parameters": [
+            {
+                "name"      : "将要播报的文本",
+                "en_name"   : "VoiceText",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "设置语音文字",
+        "en_name"   : "SetVoiceText",
+        "cmd"       : "S208",
+        "parameters": [
+            {
+                "name"      : "语音序号",
+                "en_name"   : "SerialNumber",
+                "type"      : "input",
+                "option"    : []
+            },
+            {
+                "name"      : "将要播报的文本",
+                "en_name"   : "VoiceText",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "设置语音音量",
+        "en_name"   : "SetVolume",
+        "cmd"       : "S209",
+        "parameters": [
+            {
+                "name"      : "请选择音量",
+                "en_name"   : "SelectVolume",
+                "type"      : "select",
+                "option"    : [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ]
+            }
+        ]
+    },
+    {
+        "name"      : "更改服务器",
+        "en_name"   : "ChangeServer",
+        "cmd"       : "S301",
+        "parameters": [
+            {
+                "name"      : "服务IP",
+                "en_name"   : "ServerIP",
+                "type"      : "input",
+                "option"    : []
+            },
+            {
+                "name"      : "服务端口",
+                "en_name"   : "ServerPort",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "震动时蜂鸣器报警开关",
+        "en_name"   : "AlarmSwitchWithVibration",
+        "cmd"       : "S303",
+        "parameters": [
+            {
+                "name"      : "选项",
+                "en_name"   : "Options",
+                "type"      : "single",
+                "option"    : [
+                    "ON",
+                    "OFF",
+                ]
+            }
+        ]
+    },
+    {
+        "name"      : "更改GPS回报时间",
+        "en_name"   : "ChangeGPSReturnTime",
+        "cmd"       : "S304",
+        "parameters": [
+            {
+                "name"      : "锁车时秒数",
+                "en_name"   : "LockTime(s)",
+                "type"      : "input",
+                "option"    : []
+            },
+            {
+                "name"      : "开锁时秒数",
+                "en_name"   : "UnlockTime(s)",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "更改心跳间隔时间",
+        "en_name"   : "ChangeHeartbeatInterval",
+        "cmd"       : "S307",
+        "parameters": [
+            {
+                "name"      : "心跳间隔(秒)",
+                "en_name"   : "HeartbeatInterval(s)",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "更改GPS预开启时间",
+        "en_name"   : "ChangeGPSPre-openingTime",
+        "cmd"       : "S308",
+        "parameters": [
+            {
+                "name"      : "GPS预开启时间(秒)",
+                "en_name"   : "GPSPre-openingTime(s)",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "设置震动检测",
+        "en_name"   : "SetupVibrationDetection",
+        "cmd"       : "S311",
+        "parameters": [
+            {
+                "name"      : "选项",
+                "en_name"   : "Options",
+                "type"      : "single",
+                "option"    : [
+                    "OFF",
+                    "ON",
+                ]
+            }
+        ]
+    },
+    {
+        "name"      : "设置区域锁",
+        "en_name"   : "SetupRegionalLock",
+        "cmd"       : "S312",
+        "parameters": [
+            {
+                "name"      : "选项",
+                "en_name"   : "Options",
+                "type"      : "single",
+                "option"    : [
+                    "普通/Ordinary",
+                    "区域/Regional",
+                ]
+            }
+        ]
+    },
+    {
+        "name"      : "设置区域锁可关",
+        "en_name"   : "SetRegionalLockCanBeLocked",
+        "cmd"       : "S313",
+        "parameters": [
+            {
+                "name"      : "可锁等待秒数",
+                "en_name"   : "LatencyTime(s)",
+                "type"      : "input",
+                "option"    : []
+            },
+            {
+                "name"      : "响铃次数",
+                "en_name"   : "RingCount",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "查询区域锁模式",
+        "en_name"   : "CheckRegionalLockMode",
+        "cmd"       : "S314",
+        "parameters": []
+    },
+    {
+        "name"      : "查询蓝牙密码",
+        "en_name"   : "GetBluetoothPassword",
+        "cmd"       : "S315",
+        "parameters": []
+    },
+    {
+        "name"      : "查询蓝牙秘钥",
+        "en_name"   : "GetBluetoothKey",
+        "cmd"       : "S316",
+        "parameters": []
+    },
+    {
+        "name"      : "设置蓝牙密码",
+        "en_name"   : "SetBluetoothPassword",
+        "cmd"       : "S317",
+        "parameters": [
+            {
+                "name"      : "密码",
+                "en_name"   : "BluetoothPassword",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "设置蓝牙秘钥",
+        "en_name"   : "SetBluetoothKey",
+        "cmd"       : "S318",
+        "parameters": [
+            {
+                "name"      : "密钥",
+                "en_name"   : "BluetoothKey",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "查询锁模式",
+        "en_name"   : "SetBluetoothKey",
+        "cmd"       : "S319",
+        "parameters": []
+    },
+    {
+        "name"      : "远程升级",
+        "en_name"   : "FOTA",
+        "cmd"       : "S200",
+        "parameters": [
+            {
+                "name"      : "http地址",
+                "en_name"   : "FOTA Url",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "设置轮胎周长",
+        "en_name"   : "SetTyrePerimeter",
+        "cmd"       : "S309",
+        "parameters": [
+            {
+                "name"      : "轮胎周长(米)",
+                "en_name"   : "TyrePerimeter(m)",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    },
+    {
+        "name"      : "进入出厂模式",
+        "en_name"   : "FactoryMode",
+        "cmd"       : "S310",
+        "parameters": []
+    },
+    {
+        "name"      : "实时音频播报",
+        "en_name"   : "PlayAudio",
+        "cmd"       : "S331",
+        "parameters": []
+    },
+    {
+        "name"      : "设置音频文件",
+        "en_name"   : "SetAudioFile",
+        "cmd"       : "S332",
+        "parameters": [
+            {
+                "name"      : "请选择音频",
+                "en_name"   : "SelectAudioID",
+                "type"      : "select",
+                "option"    : [
+                    "欢迎使用",
+                    "已开锁",
+                    "已锁车",
+                    "请停车",
+                    "请锁车",
+                    "请进入停车场",
+                    "锁车超时",
+                    "已出场",
+                    "临时锁车",
+                    "请扫码开锁",
+                    "电池锁关闭",
+                    "电池锁打开",
+                    "电池锁故障",
+                    "车锁故障",
+                    "请勿超速"
+                ]
+            },
+            {
+                "name"      : "IP地址",
+                "en_name"   : "Url",
+                "type"      : "input",
+                "option"    : []
+            }
+        ]
+    }
+]
